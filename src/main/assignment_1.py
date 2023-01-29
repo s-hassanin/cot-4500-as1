@@ -32,8 +32,6 @@ def double_precision(binary:str):
     chopped = int(result * pow(10,k) / pow(10,k))
     print(chopped*1.0)
 
-
-
     # --------------------------------------
     #  Question 3
     rounded = result /1000
@@ -175,7 +173,6 @@ def newton_raphson(initial_approximation: float, tolerance: float, sequence: str
 
 if __name__ == "__main__":
 
-
     # Question 1[Double Percision]
 
     str = "010000000111111010111001"
@@ -189,8 +186,6 @@ if __name__ == "__main__":
     x: int = 1
     check1: bool = check_for_alternating(function_a)
     check2: bool = check_for_decreasing(function_a, x)
-
-    # print(check1 and check2)
 
     if check1 and check2:
         use_minimum_term_function()

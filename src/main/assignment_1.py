@@ -92,17 +92,15 @@ def check_for_negative_1_exponent_term(function: str) -> bool:
     return False
 
 #----------------------------------------------
-
 def use_minimum_term_function():
-
-    counter = 0
-    result = 0
-    k = 10
-    while (result >= pow(10, -4)):
-        result = pow(-1, k) / pow(k, 3)
+    k = 0
+    error = 1
+    while error >= pow(10, -4):
         k = k + 1
-        counter = counter + 1
-    print(counter)
+        result = pow(-1, k)/ pow(k,3)
+        error = abs(result)
+
+    print(k)
 
 #-----------------------------------------------------------------
 # Question 6

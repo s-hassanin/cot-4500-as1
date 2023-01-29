@@ -186,8 +186,6 @@ if __name__ == "__main__":
     check1: bool = check_for_alternating(function_a)
     check2: bool = check_for_decreasing(function_a, x)
 
-
-
     if check1 and check2:
         use_minimum_term_function()
     # ------------------------------------------------------
